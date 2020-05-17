@@ -19,5 +19,7 @@ from profiles import views
 
 urlpatterns = [
     path('jobs/',views.Jobs.as_view()),
-    path('jobs/<str:uuid>/', views.JobsDetail.as_view())
+    path('jobs/<str:uuid>/', views.JobsDetail.as_view()),
+    path('blogs/', views.Blogs.as_view()),
+    path('blogs/<str:uuid>/', views.JobsDetail.as_view()),
 ]
